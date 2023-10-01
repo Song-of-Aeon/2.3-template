@@ -1,9 +1,5 @@
 ///@function log(data[...]);
 function log() {
-	if(typeof(argument[0]) == "struct") && BROWSER { //display as-is for the nice inspector in js console
-		show_debug_message(argument[0]);	
-		return;
-	}
 	var r = string(argument[0]), i;
 	for (i=1; i<argument_count; i++) {
 		r += ", " + string(argument[i]);

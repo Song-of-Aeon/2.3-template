@@ -3,7 +3,7 @@
 /// @param {function} [draw]=NUMBER5 munc'd draw. does not obey timescale
 /// @param {string} [layer_]="instances" layer
 /// @param {bool} [obeyTimescale]=true use timescale
-function scriptable_create(step=NUMBER5, draw=draw_self, layer_="instances",obeyTimescale = true) {
+function scriptable_create(step=c_null, draw=draw_self, layer_="Instances", obeyTimescale = true) {
 	var chump = instance_create(0, 0, o_, layer_);
 	chump.step = method(chump, step);
 	chump.draw = method(chump, draw);

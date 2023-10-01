@@ -80,6 +80,13 @@ log(color_get_red(c_green), color_get_green(c_green), color_get_blue(c_green));
 #macro canvas surface_set_target(
 #macro to_brush )
 #macro end_brush surface_reset_target()
+#macro get_arguments \
+var argcounter; \
+var arguments = []; \
+for (argcounter=0; argcounter<argument_count; argcounter++) { \
+arguments[argcounter] = argument[argcounter]; \
+} \
+c_null
 //#macro if if _GM_LINE_ != 10 && 
 //#macro countequals for(var equalize;; if true {ce(equalize) break}) equalize =
 //#macro is ==
@@ -133,6 +140,8 @@ break; \
 #macro vk_backslash 220
 #macro vk_tilde 192
 #macro vk_central 12
+
+#macro archetype constructor
 
 //#macro vk_ 1
 

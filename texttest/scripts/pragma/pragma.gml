@@ -7,6 +7,9 @@ global.textguy = {};
 global.fading = false;
 global.volume = 100;
 global.music = 100;
+global.kunctions = {};
+//global.gamesize = new vec2();
+//window_set_size(global.gamesize.x, global.gamesize.y);
 
 global.marineconstellation = font_add_sprite_ext(fts_marineconstellation,
 	"!\"#$%&'()*+,-"+
@@ -50,5 +53,22 @@ enum DESTROYSHAPE {
 global.version = "ver. 0.7." + string(GM_build_date);
 global.gameobjectvariables = [
 	"speed", "direction", "xprevious", "yprevious", "image_index", "image_xscale", "image_yscale", "image_blend", "image_index"
-]
+];
 
+global.gmtypes = [
+	"number",
+	"string",
+	"bool",
+	"int32",
+	"int64",
+	"ptr",
+	"undefined",
+	"array",
+	"vec3",
+	"vec4",
+	"method",
+	"struct",
+	"ref",
+	"null",
+	"unknown"
+];

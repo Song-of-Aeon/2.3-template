@@ -1,5 +1,5 @@
 if(obey){
-	repeat(c_getticks())
+	//repeat(c_getticks())
 		step();
 }
 else

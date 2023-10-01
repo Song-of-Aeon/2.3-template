@@ -9,7 +9,7 @@ function vec3(x_=0, y_=0, z_=0) constructor {
 	z = z_;
 	isvec3 = true;
 }
-function vec4(x_=0, y_=0, z_=0, w=0) constructor {
+function vec4(x_=0, y_=0, z_=0, w_=0) constructor {
 	x = x_;
 	y = y_;
 	z = z_;

@@ -27,9 +27,17 @@ function deep_copy(struct, antiwhiletrue=[]) {
 				}
 				break;
 			case "array":
+				
+				//newone[$oldstuff[i]] = deep_copy()
 				newone[$oldstuff[i]] = [];
-				var len = array_length(struct[$oldstuff[i]])
-				array_copy(newone[$oldstuff[i]], 0, struct[$oldstuff[i]], 0, len);
+				var len = array_length(struct[$oldstuff[i]]);
+				array_push(antiwhiletrue, struct[$oldstuff[i]]);
+				var j;
+				for(j=0; j<len; j++) {
+					array_push(newone[$oldstuff[i]], deep_copy(struct[$oldstuff[i]][j], antiwhiletrue));
+				}
+				
+				//array_copy(newone[$oldstuff[i]], 0, struct[$oldstuff[i]], 0, len);*/
 				break;
 			case "method":
 				if method_get_self(struct[$oldstuff[i]]) == struct {
