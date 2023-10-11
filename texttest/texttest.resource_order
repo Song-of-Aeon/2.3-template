@@ -171,6 +171,7 @@
     {"name":"scriptable_create","order":23,"path":"scripts/scriptable_create/scriptable_create.yy",},
     {"name":"draw_circle_width","order":4,"path":"scripts/draw_circle_width/draw_circle_width.yy",},
     {"name":"note","order":39,"path":"scripts/note/note.yy",},
+    {"name":"sturface","order":71,"path":"scripts/sturface/sturface.yy",},
     {"name":"with_array","order":16,"path":"scripts/with_array/with_array.yy",},
     {"name":"draw_outline","order":6,"path":"scripts/draw_outline/draw_outline.yy",},
     {"name":"se_sans","order":3,"path":"sounds/se_sans/se_sans.yy",},

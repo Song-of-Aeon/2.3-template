@@ -200,6 +200,7 @@
     {"id":{"name":"scriptable_create","path":"scripts/scriptable_create/scriptable_create.yy",},},
     {"id":{"name":"draw_circle_width","path":"scripts/draw_circle_width/draw_circle_width.yy",},},
     {"id":{"name":"note","path":"scripts/note/note.yy",},},
+    {"id":{"name":"sturface","path":"scripts/sturface/sturface.yy",},},
     {"id":{"name":"with_array","path":"scripts/with_array/with_array.yy",},},
     {"id":{"name":"draw_outline","path":"scripts/draw_outline/draw_outline.yy",},},
     {"id":{"name":"se_sans","path":"sounds/se_sans/se_sans.yy",},},
